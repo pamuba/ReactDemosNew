@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Greet() {
+const Greet = (props) => {
   return (
-    <div>Hello James</div>
+   <>
+     <div>Hello James {props.name} aka {props.heroName}</div>
+     <div>{props.children}</div>
+   </>
   )
 }
 

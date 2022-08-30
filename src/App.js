@@ -6,10 +6,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greet/>
-        <Greet/>
-        <Greet/>
-        <Welcome/>
+        <Greet name="Bruce" heroName="Batman">
+          <p>Hello how ru???</p>
+          <textarea></textarea>
+        </Greet>
+        <Greet name="Clark" heroName="Superman"/>
+        <Greet name="Diana" heroName="Wonder Women"/>
+        <Welcome name="James" heroName="Iron Man"/>
       </header>
     </div>
   );
