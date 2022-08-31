@@ -3,6 +3,9 @@ import Counter from './components/Counter';
 import Greet from './components/Greet';
 import StateDemo from './components/StateDemo';
 import Welcome from './components/Welcome';
+import ParentComponent from './components/ParentComponent'
+import Form from './components/Form'
+import ConditionalRendering from './components/ConditionalRendering'
 
 function App() {
   return (
@@ -18,7 +21,12 @@ function App() {
 
         {/* <StateDemo/> */}
 
-        <Counter/>
+        {/* <Counter/> */}
+
+        {/* <ParentComponent /> */}
+
+        {/* <ConditionalRendering/> */}
+        <Form/>
       </header>
     </div>
   );
