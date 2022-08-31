@@ -1,4 +1,5 @@
 import './App.css';
+import Counter from './components/Counter';
 import Greet from './components/Greet';
 import StateDemo from './components/StateDemo';
 import Welcome from './components/Welcome';
@@ -15,7 +16,9 @@ function App() {
         <Greet name="Diana" heroName="Wonder Women"/>
         <Welcome name="James" heroName="Iron Man"/> */}
 
-        <StateDemo/>
+        {/* <StateDemo/> */}
+
+        <Counter/>
       </header>
     </div>
   );
