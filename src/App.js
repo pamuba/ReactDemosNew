@@ -17,6 +17,9 @@ import HttpDemo from './components/HttpDemo';
 import PostForm from './components/PostForm';
 import HooksCounter from './hooks/HooksCounter';
 import HookCounterTwo from './hooks/HookCounterTwo';
+import UseEffectDemo from './hooks/UseEffectDemo';
+import HookMouse from './hooks/HookMouse';
+import MouseContainer from './hooks/MouseContainer';
 
 function App() {
   return (
@@ -62,7 +65,11 @@ function App() {
         {/* <HttpDemo /> */}
         {/* <PostForm/> */}
         {/* <HooksCounter/> */}
-        <HookCounterTwo />
+        {/* <HookCounterTwo /> */}
+        {/* <UseEffectDemo/> */}
+
+        {/* <HookMouse /> */}
+        <MouseContainer/>
       </header>
     </div>
   );
