@@ -1,0 +1,47 @@
+Mounting: When an instance of the component is created and inserted into the DOM.
+
+Updating:When a component is re-rendered(changes in props/state)
+
+Unmounting: When the component is removed from the DOM
+
+Error Handling: Errors during rendering, in a LC method,
+or in the ctor of any child component 
+
+Mounting: 
+1. ctr
+2. staic getDerivedStateFromProps
+3. render
+4. componentDidMount
+
+Updating:
+1. staic getDerivedStateFromProps
+2. render
+3. shouldComponentUpdate
+4. componentDidUpdate
+5. getSnapshotBeforeUpdate
+
+Unounting: componentWillUnmount
+
+Error Handling: static getDerivedStateFromError and componentDidCatch 
+
+===========================================================
+
+RC: it doesnt implement shouldComponentUpdate method.
+It always returns true
+
+PC: it implements shouldComponentUpdate method.
+it retirn the SC of props and state
+
+Primitive Types
+'John' SC 'John' returns T
+
+Complex Types
+var a = {1,2,3}
+var b = {1,2,3}
+var c = a
+
+c SC a -> T
+a SC b -> F
+
+
+C -> HOC ->MC

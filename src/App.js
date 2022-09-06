@@ -6,6 +6,14 @@ import Welcome from './components/Welcome';
 import ParentComponent from './components/ParentComponent'
 import Form from './components/Form'
 import ConditionalRendering from './components/ConditionalRendering'
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import Hero from './Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import HttpDemo from './components/HttpDemo';
 
 function App() {
   return (
@@ -26,7 +34,29 @@ function App() {
         {/* <ParentComponent /> */}
 
         {/* <ConditionalRendering/> */}
-        <Form/>
+        {/* <Form/> */}
+
+        {/* <ParentComp /> */}
+
+        {/* <RefsDemo /> */}
+        
+        {/* <ErrorBoundary>
+         <Hero heroName="Batman"/>
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+         <Hero heroName="Superman"/>
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+         <Hero heroName="Joker"/>
+        </ErrorBoundary> */}
+
+
+        {/* <ClickCounter></ClickCounter>
+        <HoverCounter /> */}
+
+        <HttpDemo />
       </header>
     </div>
   );
