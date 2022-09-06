@@ -16,6 +16,7 @@ import HoverCounter from './components/HoverCounter';
 import HttpDemo from './components/HttpDemo';
 import PostForm from './components/PostForm';
 import HooksCounter from './hooks/HooksCounter';
+import HookCounterTwo from './hooks/HookCounterTwo';
 
 function App() {
   return (
@@ -60,7 +61,8 @@ function App() {
 
         {/* <HttpDemo /> */}
         {/* <PostForm/> */}
-        <HooksCounter/>
+        {/* <HooksCounter/> */}
+        <HookCounterTwo />
       </header>
     </div>
   );

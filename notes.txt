@@ -50,3 +50,8 @@ Hooks -> 16.8
 
 Why use hooks?
 To add the functionalities of the class components to a function component
+
+useEffect
+1. componentDidMount
+2. componentDidUpdate
+3. componentWillUnmount
