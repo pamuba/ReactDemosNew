@@ -6,7 +6,8 @@ export class HttpDemo extends Component {
     super(props)
   
     this.state = {
-       posts: []
+       posts: [],
+       errMesage :''
     }
   }
   componentDidMount(){
@@ -14,13 +15,22 @@ export class HttpDemo extends Component {
     axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(res => {
             console.log(res)
+            this.setState({
+                posts: res.data
+            })
         })
-        .catch(err=>console.log(err.message))
+        .catch(err=>this.setState({errMesage:err.message}))
   }
   render() {
+    const {posts, errMesage} = this.state
     return (
       <div>
         Lists of Posts:
+        {
+            posts.length ? 
+            posts.map(post => <div key={post.id}>{post.title}</div>):
+            errMesage
+        }
       </div>
     )
   }
